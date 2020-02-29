@@ -1,0 +1,279 @@
+[  2% 13/497] wifi-service dexpreopt
+FAILED: out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/dexpreopt.zip
+/bin/bash -c "bash out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/dexpreopt.sh out/target/common/obj/JAVA_LIBRARIES/wifi-service_intermediates/javalib.jar out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/dexpreopt.zip"
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] Failed to parse command line: Unknown argument: speed-profile
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] Command: out/soong/host/linux-x86/bin/dex2oat --avoid-storing-invocation --write-invocation-to=out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/oat/arm/javalib.invocation --runtime-arg -Xms64m --runtime-arg -Xmx512m --runtime-arg -Xbootclasspath:out/soong/s3ve3gxx/dex_bootjars_input/core-oj.jar:out/soong/s3ve3gxx/dex_bootjars_input/core-libart.jar:out/soong/s3ve3gxx/dex_bootjars_input/okhttp.jar:out/soong/s3ve3gxx/dex_bootjars_input/bouncycastle.jar:out/soong/s3ve3gxx/dex_bootjars_input/apache-xml.jar:out/soong/s3ve3gxx/dex_bootjars_input/framework.jar:out/soong/s3ve3gxx/dex_bootjars_input/ext.jar:out/soong/s3ve3gxx/dex_bootjars_input/telephony-common.jar:out/soong/s3ve3gxx/dex_bootjars_input/voip-common.jar:out/soong/s3ve3gxx/dex_bootjars_input/ims-common.jar:out/soong/s3ve3gxx/dex_bootjars_input/android.test.base.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.runtime/javalib/core-oj.jar:/apex/com.android.runtime/javalib/core-libart.jar:/apex/com.android.runtime/javalib/okhttp.jar:/apex/com.android.runtime/javalib/bouncycastle.jar:/apex/com.android.runtime/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/android.test.base.jar --class-loader-context=& --boot-image=out/soong/s3ve3gxx/dex_bootjars/system/framework/boot.art --dex-file=out/target/common/obj/JAVA_LIBRARIES/wifi-service_intermediates/javalib.jar --dex-location=/system/framework/wifi-service.jar --oat-file=out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/oat/arm/javalib.odex --android-root=out/empty --instruction-set=arm --instruction-set-variant=generic --instruction-set-features=default --no-generate-debug-info --generate-build-id --abort-on-hard-verifier-error --force-determinism --no-inline-from=core-oj.jar --copy-dex-files=false --compiler-filter=speed-profile speed-profile --no-generate-mini-debug-info --compilation-reason=prebuilt --profile-file=out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/profile.prof
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] Usage: dex2oat [options]...
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   -j<number>: specifies the number of threads used for compilation.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]        Default is the number of detected hardware threads available on the
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]        host system.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: -j12
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dex-file=<dex-file>: specifies a .dex, .jar, or .apk file to compile.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --dex-file=/system/framework/core.jar
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dex-location=<dex-location>: specifies an alternative dex location to
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       encode in the oat file for the corresponding --dex-file argument.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --dex-file=/home/build/out/system/framework/core.jar
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]                --dex-location=/system/framework/core.jar
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --zip-fd=<file-descriptor>: specifies a file descriptor of a zip file
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       containing a classes.dex file to compile.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --zip-fd=5
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --zip-location=<zip-location>: specifies a symbolic name for the file
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       corresponding to the file descriptor specified by --zip-fd.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --zip-location=/system/app/Calculator.apk
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --oat-file=<file.oat>: specifies an oat output destination via a filename.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --oat-file=/system/framework/boot.oat
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --oat-fd=<number>: specifies the oat output destination via a file descriptor.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --oat-fd=6
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --input-vdex-fd=<number>: specifies the vdex input source via a file descriptor.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --input-vdex-fd=6
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --output-vdex-fd=<number>: specifies the vdex output destination via a file
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       descriptor.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --output-vdex-fd=6
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --oat-location=<oat-name>: specifies a symbolic name for the file corresponding
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       to the file descriptor specified by --oat-fd.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --oat-location=/data/dalvik-cache/system@app@Calculator.apk.oat
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --oat-symbols=<file.oat>: specifies a destination where the oat file is copied.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       This is equivalent to file copy as build post-processing step.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       It is intended to be used with --strip and it happens before it.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --oat-symbols=/symbols/system/framework/boot.oat
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --strip: remove all debugging sections at the end (but keep mini-debug-info).
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       This is equivalent to the "strip" command as build post-processing step.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       It is intended to be used with --oat-symbols and it happens after it.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --oat-symbols=/symbols/system/framework/boot.oat
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --image=<file.art>: specifies an output image filename.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --image=/system/framework/boot.art
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --image-format=(uncompressed|lz4|lz4hc):
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Which format to store the image.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --image-format=lz4
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: uncompressed
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --image-classes=<classname-file>: specifies classes to include in an image.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --image=frameworks/base/preloaded-classes
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --base=<hex-address>: specifies the base address when creating a boot image.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --base=0x50000000
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --boot-image=<file.art>: provide the image file for the boot class path.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Do not include the arch as part of the name, it is added automatically.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --boot-image=/system/framework/boot.art
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]                (specifies /system/framework/<arch>/boot.art as the image file)
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: $ANDROID_ROOT/system/framework/boot.art
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --android-root=<path>: used to locate libraries for portable linking.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --android-root=out/host/linux-x86
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: $ANDROID_ROOT
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --instruction-set=(arm|arm64|mips|mips64|x86|x86_64): compile for a particular
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       instruction set.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --instruction-set=x86
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: arm
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --instruction-set-features=...,: Specify instruction set features
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       On target the value 'runtime' can be used to detect features at run time.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       If target does not support run-time detection the value 'runtime'
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       has the same effect as the value 'default'.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Note: the value 'runtime' has no effect if it is used on host.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --instruction-set-features=div
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: default
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --compiler-backend=(Quick|Optimizing): select compiler backend
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       set.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --compiler-backend=Optimizing
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: Optimizing
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --compiler-filter=(assume-verified|extract|verify|quicken|space-profile|space|speed-profile|speed|everything-profile|everything):
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       select compiler filter.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --compiler-filter=everything
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: speed
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --huge-method-max=<method-instruction-count>: threshold size for a huge
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       method for compiler filter tuning.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --huge-method-max=10000
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 10000
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --large-method-max=<method-instruction-count>: threshold size for a large
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       method for compiler filter tuning.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --large-method-max=600
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 600
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --small-method-max=<method-instruction-count>: threshold size for a small
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       method for compiler filter tuning.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --small-method-max=60
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 60
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --tiny-method-max=<method-instruction-count>: threshold size for a tiny
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       method for compiler filter tuning.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --tiny-method-max=20
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 20
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --num-dex-methods=<method-count>: threshold size for a small dex file for
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       compiler filter tuning. If the input has fewer than this many methods
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       and the filter is not interpret-only or verify-none or verify-at-runtime, 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       overrides the filter to use speed
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --num-dex-method=900
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 900
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --inline-max-code-units=<code-units-count>: the maximum code units that a method
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       can have to be considered for inlining. A zero value will disable inlining.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Honored only by Optimizing. Has priority over the --compiler-filter option.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Intended for development/experimental use.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --inline-max-code-units=32
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 32
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dump-timings: display a breakdown of where time was spent
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dump-pass-timings: display a breakdown of time spent in optimization
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       passes for each compiled method.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   -g
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --generate-debug-info: Generate debug information for native debugging,
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       such as stack unwinding information, ELF symbols and DWARF sections.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       If used without --debuggable, it will be best-effort only.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       This option does not affect the generated code. (disabled by default)
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --no-generate-debug-info: Do not generate debug information for native debugging.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --generate-mini-debug-info: Generate minimal amount of LZMA-compressed
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       debug information necessary to print backtraces. (disabled by default)
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --no-generate-mini-debug-info: Do not generate backtrace info.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --generate-build-id: Generate GNU-compatible linker build ID ELF section with
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       SHA-1 of the file content (and thus stable across identical builds)
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --no-generate-build-id: Do not generate the build ID ELF section.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --debuggable: Produce code debuggable with Java debugger.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --avoid-storing-invocation: Avoid storing the invocation args in the key value
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       store. Used to test determinism with different args.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --write-invocation-to=<file>: Write the invocation commandline to the given file
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       for later use. Used to test determinism with different host architectures.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --runtime-arg <argument>: used to specify various arguments for the runtime,
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       such as initial heap size, maximum heap size, and verbose output.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Use a separate --runtime-arg switch for each argument.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --runtime-arg -Xms256m
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --profile-file=<filename>: specify profiler output file to use for compilation.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --profile-file-fd=<number>: same as --profile-file but accepts a file descriptor.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Cannot be used together with --profile-file.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --swap-file=<file-name>: specifies a file to use for swap.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --swap-file=/data/tmp/swap.001
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --swap-fd=<file-descriptor>: specifies a file to use for swap (by descriptor).
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --swap-fd=10
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --swap-dex-size-threshold=<size>: specifies the minimum total dex file size in
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       bytes to allow the use of swap.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --swap-dex-size-threshold=1000000
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 20971520
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --swap-dex-count-threshold=<count>: specifies the minimum number of dex files to
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       allow the use of swap.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --swap-dex-count-threshold=10
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Default: 2
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --very-large-app-threshold=<size>: specifies the minimum total dex file size in
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       bytes to consider the input "very large" and reduce compilation done.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --very-large-app-threshold=100000000
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --app-image-fd=<file-descriptor>: specify output file descriptor for app image.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       The image is non-empty only if a profile is passed in.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --app-image-fd=10
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --app-image-file=<file-name>: specify a file name for app image.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --app-image-file=/data/dalvik-cache/system@app@Calculator.apk.art
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --multi-image: obsolete, ignored
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --force-determinism: force the compiler to emit a deterministic output.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dump-cfg=<cfg-file>: dump control-flow graphs (CFGs) to specified file.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --dump-cfg=output.cfg
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dump-cfg-append: when dumping CFGs to an existing file, append new CFG data to
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       existing data (instead of overwriting existing data with new data, which is
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       the default behavior). This option is only meaningful when used with
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       --dump-cfg.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --classpath-dir=<directory-path>: directory used to resolve relative class paths.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --class-loader-context=<string spec>: a string specifying the intended
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       runtime loading context for the compiled dex files.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --stored-class-loader-context=<string spec>: a string specifying the intended
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       runtime loading context that is stored in the oat file. Overrides
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       --class-loader-context. Note that this ignores the classpath_dir arg.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       It describes how the class loader chain should be built in order to ensure
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       classes are resolved during dex2aot as they would be resolved at runtime.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       This spec will be encoded in the oat file. If at runtime the dex file is
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       loaded in a different context, the oat file will be rejected.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       The chain is interpreted in the natural 'parent order', meaning that class
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       loader 'i+1' will be the parent of class loader 'i'.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       The compilation sources will be appended to the classpath of the first class
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       loader.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       E.g. if the context is 'PCL[lib1.dex];DLC[lib2.dex]' and 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       --dex-file=src.dex then dex2oat will setup a PathClassLoader with classpath 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       'lib1.dex:src.dex' and set its parent to a DelegateLastClassLoader with 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       classpath 'lib2.dex'.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Note that the compiler will be tolerant if the source dex files specified
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       with --dex-file are found in the classpath. The source dex files will be
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       removed from any class loader's classpath possibly resulting in empty
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       class loaders.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --class-loader-context=PCL[lib1.dex:lib2.dex];DLC[lib3.dex]
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --class-loader-context-fds=<fds>: a colon-separated list of file descriptors
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       for dex files in --class-loader-context. Their order must be the same as
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       dex files in flattened class loader context.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --dirty-image-objects=<directory-path>: list of known dirty objects in the image.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       The image writer will group them together.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --compact-dex-level=none|fast: None avoids generating compact dex, fast
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       generates compact dex with low compile time. If speed-profile is specified as
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       the compiler filter and the profile is not empty, the default compact dex
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       level is always used.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --deduplicate-code=true|false: enable|disable code deduplication. Deduplicated
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       code will have an arbitrary symbol tagged with [DEDUPED].
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --copy-dex-files=true|false: enable|disable copying the dex files into the
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       output vdex.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --compilation-reason=<string>: optional metadata specifying the reason for
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       compiling the apk. If specified, the string will be embedded verbatim in
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       the key value store of the oat file.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       Example: --compilation-reason=install
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --resolve-startup-const-strings=true|false: If true, the compiler eagerly
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]       resolves strings referenced from const-string of startup methods.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200]   --max-image-block-size=<size>: Maximum solid block size for compressed images.
+dex2oat E 02-29 20:54:58   450   450 dex2oat.cc:200] 
+See log for usage error information
+error: out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/dexpreopt.sh:27 exited with status 1
+error in command:
+ANDROID_LOG_TAGS="*:e" out/soong/host/linux-x86/bin/dex2oat --avoid-storing-invocation --write-invocation-to=out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/oat/arm/javalib.invocation --runtime-arg -Xms64m --runtime-arg -Xmx512m --runtime-arg -Xbootclasspath:out/soong/s3ve3gxx/dex_bootjars_input/core-oj.jar:out/soong/s3ve3gxx/dex_bootjars_input/core-libart.jar:out/soong/s3ve3gxx/dex_bootjars_input/okhttp.jar:out/soong/s3ve3gxx/dex_bootjars_input/bouncycastle.jar:out/soong/s3ve3gxx/dex_bootjars_input/apache-xml.jar:out/soong/s3ve3gxx/dex_bootjars_input/framework.jar:out/soong/s3ve3gxx/dex_bootjars_input/ext.jar:out/soong/s3ve3gxx/dex_bootjars_input/telephony-common.jar:out/soong/s3ve3gxx/dex_bootjars_input/voip-common.jar:out/soong/s3ve3gxx/dex_bootjars_input/ims-common.jar:out/soong/s3ve3gxx/dex_bootjars_input/android.test.base.jar --runtime-arg -Xbootclasspath-locations:/apex/com.android.runtime/javalib/core-oj.jar:/apex/com.android.runtime/javalib/core-libart.jar:/apex/com.android.runtime/javalib/okhttp.jar:/apex/com.android.runtime/javalib/bouncycastle.jar:/apex/com.android.runtime/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/android.test.base.jar ${class_loader_context_arg} ${stored_class_loader_context_arg} --boot-image=out/soong/s3ve3gxx/dex_bootjars/system/framework/boot.art --dex-file=$1 --dex-location=/system/framework/wifi-service.jar --oat-file=out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/oat/arm/javalib.odex --android-root=out/empty --instruction-set=arm --instruction-set-variant=generic --instruction-set-features=default --no-generate-debug-info --generate-build-id --abort-on-hard-verifier-error --force-determinism --no-inline-from=core-oj.jar --copy-dex-files=false --compiler-filter=speed-profile speed-profile --no-generate-mini-debug-info --compilation-reason=prebuilt --profile-file=out/target/product/s3ve3gxx/obj/JAVA_LIBRARIES/wifi-service_intermediates/profile.prof
